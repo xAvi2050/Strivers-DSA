@@ -1,3 +1,4 @@
+
 // public class BasicMath {
 //     public static void main(String[] args) {
 //         int num = 243;
@@ -86,6 +87,8 @@
 //         if (isPrime) System.out.println("Prime");
 //     }
 // }
+
+// --> Sum of prime numbers in between 1 to 100
 
 // public class BasicMath {
 //     public static void main(String[] args) {
