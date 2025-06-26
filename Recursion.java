@@ -1,3 +1,5 @@
+// --> Printing numbers from 1 to 10
+
 // public class Recursion {
 //     public static void main(String[] args) {
 //         printNum(1);
@@ -8,6 +10,8 @@
 //         printNum(n+1);
 //     }
 // }
+
+// --> Printing a 'name' 5 times
 
 // public class Recursion {
 //     public static void main(String[] args) {
@@ -20,6 +24,8 @@
 //     }
 // }
 
+// --> Printing numbers from 5 to 1
+
 // public class Recursion {
 //     public static void main(String[] args) {
 //         printNum(5);
@@ -30,6 +36,8 @@
 //         printNum(n-1);
 //     }
 // }
+
+// --> Printing sum of numbers from 1 to 7
 
 // public class Recursion {
 //     public static void main(String[] args) {
@@ -44,6 +52,8 @@
 //     }
 // }
 
+// --> Printing factorial of 5
+
 // public class Recursion {
 //     public static void main(String[] args) {
 //         factorial(5, 1);
@@ -57,7 +67,9 @@
 //     }
 // }
 
-// public class Recursion {   // Reverse an Array without recursion
+// --> Reverse an Array without recursion
+
+// public class Recursion {   
 //     public static void main(String[] args) {
 //         int[] arr = {2, 7, 4, 5, 3, 11};
 //         int s = 0, e = arr.length-1;
@@ -74,6 +86,8 @@
 //         }
 //     }
 // }
+
+// --> Reverse an Array with recursion
 
 // public class Recursion {
 //     public static void main(String[] args) {
@@ -94,6 +108,8 @@
 //     }
 // }
 
+// --> Reverse a String
+
 // public class Recursion {
 //     public static void main(String[] args) {
 //         String name = "Avijit";
@@ -109,6 +125,8 @@
 //     }
 // }
 
+// --> Palindrome check
+
 // public class Recursion {
 //     public static void main(String[] args) {
 //         String name = "BoB";
@@ -123,7 +141,9 @@
 //     }
 // }
 
-// public class Recursion {  // Fibonaci Series without recursion
+// --> Fibonaci Series without recursion
+
+// public class Recursion {  
 //     public static void main(String[] args) {
 //         int n = 8;
 //         int a = 1;
@@ -137,6 +157,8 @@
 //         }
 //     }
 // }
+
+// --> Fibonaci Series with recursion
 
 // public class Recursion { 
 //     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+// --> Counting the occurrance of each element inside of an integer array
+
 // public class Hashing {
 //     public static void main(String[] args) {
 //         int[] arr = {2, 4, 2, 7, 8, 8, 5, 4, 4, 6, 8};
@@ -16,6 +18,7 @@
 //     }
 // }
 
+// --> Counting the occurrance of each character inside of a String
 
 // public class Hashing {
 //     public static void main(String[] args) {
