@@ -1,0 +1,20 @@
+# Java class files
+*.class
+
+# Eclipse/IntelliJ config
+*.log
+*.tmp
+*.swp
+*.iml
+.idea/
+.project
+.classpath
+
+# Output folders
+bin/
+out/
+target/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
