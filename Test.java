@@ -1,34 +1,22 @@
 
 
-// public class Test {
-//     public static void main(String[] args) throws Exception {
-//         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter the day: ");
-//         int day = sc.nextInt();
+public class Test {
+    public static void main(String[] args) {
 
-//         switch (day) {
-//             case 1: 
-//                 System.out.println("Monday");
-//                 break;
-//             case 2: 
-//                 System.out.println("Tuesday");
-//                 break;
-//             case 3: 
-//                 System.out.println("Wednesday");
-//                 break;
-//             case 4: 
-//                 System.out.println("Friday");
-//                 break;
-//             case 5: 
-//                 System.out.println("Saturday");
-//                 break;
-//             case 6: 
-//                 System.out.println("Sunday");
-//                 break;
-//             default:
-//                 System.out.println("Invalid");
-//         }
+        int[] arr = {24, 13, 46, 24, 52, 20, 9};
 
-//         sc.close();
-//     }
-// }
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr.length - i -1; j++){
+                if(arr[j]>arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+
+        for (int index = 0; index < arr.length; index++) {
+            System.out.println(arr[index]);
+        }
+    }
+}
