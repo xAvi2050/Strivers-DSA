@@ -1,1 +1,1 @@
-I'm currently solving Striver's DSA sheet, and this contains all of my written code.
+I'm currently solving Striver's DSA sheet, and this repo contains all of my written code.
