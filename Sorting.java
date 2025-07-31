@@ -3,13 +3,15 @@ import java.util.*;
 public class Sorting{
     public static void main(String[] args) {
 
-        int[] Array = {13, 46, 24, 9, 52, 20, 9};
+        // int[] Array = {13, 46, 24, 9, 52, 20, 9};
 
-        mergeSort(Array, 0, Array.length - 1);
+        // mergeSort(Array, 0, Array.length - 1);
 
-        for(int i=0; i<Array.length; i++){
-            System.out.print(Array[i] + " ");
-        }
+        // for(int i=0; i<Array.length; i++){
+        //     System.out.print(Array[i] + " ");
+        // }
+
+
     }
 
     static void selectionSort(int[] arr){
@@ -102,4 +104,6 @@ public class Sorting{
         mergeSort(arr, mid + 1, high);
         merge(arr, low, mid, high);
     }
+
+    
 }
