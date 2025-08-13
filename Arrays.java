@@ -115,4 +115,187 @@ public class Arrays {
     //         System.out.print(arr[x] + " ");
     //     }
     // }
+
+    // Optimal approach
+    // public static void main(String[] args) {
+    //     int[] arr = {2, 3, 8, 10, 12};
+    //     int D = 2;
+    //     D=D%arr.length;
+
+    //     reverse(arr, 0, arr.length - 1);
+    //     reverse(arr, 0, D);
+    //     reverse(arr, D+1, arr.length - 1);
+
+    //     for(int i=0; i<arr.length; i++){
+    //         System.out.print(arr[i] + " ");
+    //     }
+    // }
+
+    // static void reverse(int[] arr, int s, int e){
+    //     while(s<=e){
+    //         int temp = arr[s];
+    //         arr[s] = arr[e];
+    //         arr[e] = temp;
+    //         s++; e--;
+    //     }
+    // }
+
+    // 7) Move all Zeros to the end of the array
+
+    // Brute-force approach
+    // public static void main(String[] args) {
+    //     int[] arr = {1, 0, 2, 3, 0, 4, 0, 1};
+
+    //     int[] newArr = new int[arr.length];
+
+    //     int j = 0;
+
+    //     for(int i=0; i<arr.length; i++){
+    //         if(arr[i] != 0){
+    //             newArr[j] = arr[i];
+    //             j++;
+    //         }
+    //     }
+
+    //     for(int k = 0; k<arr.length; k++){
+    //         System.out.print(newArr[k] + " ");
+    //     }
+    // }
+
+    // Optimal approach
+    // public static void main(String[] args) {
+    //     int[] arr = {1, 0, 2, 3, 0, 4, 0, 1};
+
+    //     int j=-1;
+
+    //     for(int i=0; i<arr.length; i++){
+    //         if(arr[i] == 0){
+    //             j = i;
+    //             break;
+    //         }
+    //     }
+
+    //     for(int i=j+1; i<arr.length; i++){ 
+    //         if(arr[i] != 0){
+    //             int temp = arr[i];
+    //             arr[i] = arr[j];
+    //             arr[j] = temp; 
+    //             j++;
+    //         }
+    //     }
+
+    //     for(int k = 0; k<arr.length; k++){
+    //         System.out.print(arr[k] + " ");
+    //     }
+    // }
+
+    // 8) Linear Search
+
+    // public static void main(String[] args) {
+    //     int[] arr = {3, 4, 7, 8, 2, 3, 6};
+    //     int key = 7;
+
+        
+    //     boolean found = false;
+    //     for(int i=0; i<arr.length; i++){
+    //         if(arr[i] == key){
+    //             System.out.println(i);
+    //             found = true;
+    //             break;
+    //         }
+    //     }
+
+    //     if(!found){
+    //         System.out.println("-1");
+    //     }
+    // }
+
+    // 9) Missing Number
+
+    // Brute-force approach
+    // public static void main(String[] args) {
+    
+    //     int[] arr = {1, 2, 3, 5};
+
+    //     int flag = 1;
+    //     for(int i=0; i<arr.length; i++){
+    //         if(arr[i] != flag){
+    //             System.out.println(flag);
+    //             break;
+    //         }
+    //         flag++;
+    //     }
+    // }
+
+    // Optimal Approach
+    // public static void main(String[] args) {
+    //     int N = 5;
+    //     int[] arr = {1, 2, 3, 4};
+
+    //     int realSum = N * (N + 1) / 2;
+
+    //     int acutalSum = 0;
+
+    //     for(int i: arr){
+    //         acutalSum += i;
+    //     }
+
+    //     System.out.println(realSum - acutalSum);
+    // }
+
+    // 10) Find the number that appears once, and the other numbers twice
+
+    // Brute-force approach
+    // public static void main(String[] args) {
+    //     int[] arr = {2, 3, 3, 2, 7, 8, 9, 7, 8, 11};
+
+    //     HashMap<Integer, Integer> map = new HashMap<>();
+
+    //     for(int i=0; i<arr.length; i++){
+    //         if(map.containsKey(arr[i])){
+    //             map.put(arr[i], map.get(arr[i]) + 1);
+    //         }else{
+    //             map.put(arr[i], 1);
+    //         }
+    //     }
+
+    //     for(int j: map.keySet()){
+    //         if(map.get(j) == 1){
+    //             System.out.println(j);
+    //         }
+    //     }
+    // }
+
+    // Optimal Approach using XOR
+
+    // a ^ a = 0, 0 ^ a = a;
+
+    // public static void main(String[] args) {
+    //     int[] arr = {2, 3, 3, 2, 7, 8, 7, 8};
+
+    //     int xor = 0;
+
+    //     for(int i=0; i<arr.length; i++){
+    //         xor = xor ^ arr[i];
+    //     }
+
+    //     System.out.println(xor);
+    // }
+
+    // 11) Print the length of the subarray with given sum k
+    public static void main(String[] args) {
+        int arr[] = {2, 3, 5, 1, 9};
+        int k = 13;
+
+        for(int i=0; i<arr.length; i++){
+            int sum = 0;
+            for(int j=i; j<arr.length; j++){
+                sum+=arr[j];
+                if(sum == k){
+                    System.out.print(j - i + 1);
+                    return;
+                }
+            }
+        }
+    }
 }
