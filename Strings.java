@@ -148,4 +148,71 @@ public class Strings {
     //     }
     //     return false;
     // }
+
+    // 7) Check if two Strings are anagrams of each other
+
+    // Normal Solution
+
+    // public static void main(String[] args) {
+    //     String s1 = "CAT";
+    //     String s2 = "ACT";
+
+    //     System.out.println(isAnagram(s1, s2));
+    // }
+
+    // private static boolean isAnagram(String str1, String str2){
+
+    //     if(str1.length() != str2.length()) return false;
+
+    //     HashMap<Character, Integer> map1 = new HashMap<>();
+    //     HashMap<Character, Integer> map2 = new HashMap<>();
+
+    //     for(int i=0; i<str1.length(); i++){
+    //         if(map1.containsKey(str1.charAt(i))){
+    //             map1.put(str1.charAt(i), map1.get(str1.charAt(i)) + 1);
+    //         } else {
+    //             map1.put(str1.charAt(i), 1);
+    //         }
+    //     }
+
+    //     for(int j=0; j<str1.length(); j++){
+    //         if(map2.containsKey(str2.charAt(j))){
+    //             map2.put(str2.charAt(j), map2.get(str2.charAt(j)) + 1);
+    //         } else {
+    //             map2.put(str2.charAt(j), 1);
+    //         }
+    //     }
+
+    //     return map1.equals(map2);
+    // }
+
+    // Optimal Solution
+
+    // public static void main(String[] args) {
+    //     String s1 = "CAT";
+    //     String s2 = "BCT";
+    //     System.out.println(isAnagram(s1, s2));
+    // }
+
+    // private static boolean isAnagram(String str1, String str2){
+
+    //     if(str1.length() != str2.length()) return false;
+
+    //     int[] freq = new int[26];
+
+    //     for(int i=0; i<str1.length(); i++){
+    //         freq[str1.charAt(i) - 'A']++;
+    //     }
+
+    //     for(int i=0; i<str2.length(); i++){
+    //         freq[str2.charAt(i) - 'A']--;
+    //     }
+
+    //     for(int i=0; i<str1.length(); i++){
+    //         if(freq[i] != 0) return false;
+    //     }
+    //     return true;
+    // }
+
+    
 }
